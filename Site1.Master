@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ProjectWork.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>E-Commerce Management</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="Style.js"></script>
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-left">
+                <img src="images/logo.png" alt="Logo" />
+                <h1>E-Commerce</h1>
+            </div>
+
+            <!-- Stylish Tab Buttons -->
+            <div class="tab-menu">
+                <button onclick="location.href='frontpage.aspx'" type="button" class="tab">Home</button>
+                <button onclick="location.href='Status.aspx'" type="button" class="tab">Status</button>
+                <button onclick="location.href='Help.aspx'" type="button" class="tab">Help</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            © 2025 E-Commerce Site
+        </footer>
+
+    </form>
+  
+
+
+</body>
+</html>
