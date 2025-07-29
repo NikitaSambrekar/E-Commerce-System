@@ -50,8 +50,7 @@
 
 <div class="product-list">
 
-    <h1>hello nikita</h1>
-    <h1>this is branching</h1>
+    
     <asp:Repeater ID="rptProducts" runat="server" OnItemCommand="rptProducts_ItemCommand">
         <ItemTemplate>
             <div class="product-card">
