@@ -49,6 +49,8 @@
      <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
 
 <div class="product-list">
+
+    <h1>hello nikita</h1>
     <asp:Repeater ID="rptProducts" runat="server" OnItemCommand="rptProducts_ItemCommand">
         <ItemTemplate>
             <div class="product-card">
